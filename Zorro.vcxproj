@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Zorro</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_debug</TargetName>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>bin\</OutDir>
+    <IntDir>obj\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;C:\of_v0.9.0_vs_release\addons\ofxFboBlur\src;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\components;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\core;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\templates;C:\of_v0.9.0_vs_release\addons\ofxXmlSettings\src;C:\of_v0.9.0_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxXmlSettings\src;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\templates;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxFboBlur\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxXmlSettings\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\templates;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxFboBlur\src;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;C:\of_v0.9.0_vs_release\addons\ofxFboBlur\src;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\components;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\core;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\templates;C:\of_v0.9.0_vs_release\addons\ofxXmlSettings\src;C:\of_v0.9.0_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxXmlSettings\src;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\templates;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxFboBlur\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxXmlSettings\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\templates;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxFboBlur\src;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);src;C:\of_v0.9.0_vs_release\addons\ofxFboBlur\src;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\components;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\core;C:\of_v0.9.0_vs_release\addons\ofxDatGui\src\templates;C:\of_v0.9.0_vs_release\addons\ofxXmlSettings\src;C:\of_v0.9.0_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxXmlSettings\src;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxDatGui\src\templates;C:\Users\David\Documents\of_v0.9.0_vs_release\addons\ofxFboBlur\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxXmlSettings\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxXmlSettings\libs;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxDatGui\src\templates;C:\Users\David\Documents\of_v0.9.3_vs_release\addons\ofxFboBlur\src;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\David\Documents\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Documents\Apps\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Documents\of_v0.9.8_vs_release\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;C:\Users\david\Downloads\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes;C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxXmlSettings\src;C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxXmlSettings\libs;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\components;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\core;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\libs\ofxSmartFont;
+C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons\ofxDatGui\src\themes</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <Link>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\addons\ofxDatGui\src\core\ofxDatGuiComponent.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxDatGui\src\ofxDatGui.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
+    <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
+    <ClCompile Include="src\AboutText.cpp" />
+    <ClCompile Include="src\DatGui.cpp" />
+    <ClCompile Include="src\MyFile.cpp" />
+    <ClCompile Include="src\EditShape.cpp" />
+    <ClCompile Include="src\Mask.cpp" />
+    <ClCompile Include="src\MaskElem.cpp" />
+    <ClCompile Include="src\MyPoint.cpp" />
+    <ClCompile Include="src\RenderHelper.cpp" />
+    <ClCompile Include="src\SelectShape.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
+    <ClCompile Include="src\Settings.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGui2dPad.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiButton.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiColorPicker.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiControls.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiFRM.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiGroups.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiLabel.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiMatrix.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiScrollView.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiSlider.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiTextInput.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiTextInputField.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGuiTimeGraph.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\core\ofxDatGuiComponent.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\core\ofxDatGuiConstants.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\core\ofxDatGuiEvents.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\core\ofxDatGuiIntObject.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\ofxDatGui.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\themes\ofxDatGuiTheme.h" />
+    <ClInclude Include="..\..\..\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h" />
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
+    <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="src\AboutText.h" />
+    <ClInclude Include="src\DatGui.h" />
+    <ClInclude Include="src\DatGuiTheme.h" />
+    <ClInclude Include="src\MyFile.h" />
+    <ClInclude Include="src\EditShape.h" />
+    <ClInclude Include="src\Mask.h" />
+    <ClInclude Include="src\MaskElem.h" />
+    <ClInclude Include="src\MyPoint.h" />
+    <ClInclude Include="src\RenderHelper.h" />
+    <ClInclude Include="src\SelectShape.h" />
+    <ClInclude Include="src\ofApp.h" />
+    <ClInclude Include="src\Settings.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+      <Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc">
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="icon.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
