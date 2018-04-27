@@ -200,18 +200,18 @@ C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlerror.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\libs\tinyxmlparser.cpp" />
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp" />
-    <ClCompile Include="src\AboutText.cpp" />
-    <ClCompile Include="src\DatGui.cpp" />
-    <ClCompile Include="src\MyFile.cpp" />
-    <ClCompile Include="src\EditShape.cpp" />
-    <ClCompile Include="src\Mask.cpp" />
-    <ClCompile Include="src\MaskElem.cpp" />
-    <ClCompile Include="src\MyPoint.cpp" />
-    <ClCompile Include="src\RenderHelper.cpp" />
-    <ClCompile Include="src\SelectShape.cpp" />
+    <ClCompile Include="src\View\DatGui.cpp" />
+    <ClCompile Include="src\Controller\File\MyFile.cpp" />
+    <ClCompile Include="src\Controller\EditShape.cpp" />
+    <ClCompile Include="src\Model\Mask.cpp" />
+    <ClCompile Include="src\Model\MaskElem.cpp" />
+    <ClCompile Include="src\Model\MyPoint.cpp" />
+    <ClCompile Include="src\Controller\RenderHelper.cpp" />
+    <ClCompile Include="src\Controller\SelectShape.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\ofApp.cpp" />
-    <ClCompile Include="src\Settings.cpp" />
+    <ClCompile Include="src\Controller\File\Settings.cpp" />
+    <ClCompile Include="src\View\AboutText.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxDatGui\src\components\ofxDatGui2dPad.h" />
@@ -238,18 +238,18 @@ C:\Users\david\Documents\Visual Studio 2017\Projects\of_v0.9.8_vs_release\addons
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\libs\tinyxml.h" />
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="src\AboutText.h" />
-    <ClInclude Include="src\DatGui.h" />
-    <ClInclude Include="src\DatGuiTheme.h" />
-    <ClInclude Include="src\MyFile.h" />
-    <ClInclude Include="src\EditShape.h" />
-    <ClInclude Include="src\Mask.h" />
-    <ClInclude Include="src\MaskElem.h" />
-    <ClInclude Include="src\MyPoint.h" />
-    <ClInclude Include="src\RenderHelper.h" />
-    <ClInclude Include="src\SelectShape.h" />
+    <ClInclude Include="src\View\DatGui.h" />
+    <ClInclude Include="src\View\DatGuiTheme.h" />
+    <ClInclude Include="src\Controller\File\MyFile.h" />
+    <ClInclude Include="src\Controller\EditShape.h" />
+    <ClInclude Include="src\Model\Mask.h" />
+    <ClInclude Include="src\Model\MaskElem.h" />
+    <ClInclude Include="src\Model\MyPoint.h" />
+    <ClInclude Include="src\Controller\RenderHelper.h" />
+    <ClInclude Include="src\Controller\SelectShape.h" />
     <ClInclude Include="src\ofApp.h" />
-    <ClInclude Include="src\Settings.h" />
+    <ClInclude Include="src\Controller\File\Settings.h" />
+    <ClInclude Include="src\View\AboutText.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">

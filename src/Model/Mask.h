@@ -1,9 +1,9 @@
 #pragma once
 
 #include "MaskElem.h"
-#include "ofMain.h"
-#include "RenderHelper.h"
-#include "DatGui.h"
+#include "../ofMain.h"
+#include "../Controller/RenderHelper.h"
+#include "../View/DatGui.h"
 
 using namespace std;
 

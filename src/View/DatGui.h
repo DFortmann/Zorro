@@ -1,9 +1,9 @@
 #pragma once
-#include "ofxDatGui.h"
-#include "Settings.h"
-#include "Mask.h"
-#include "MyFile.h"
-#include "EditShape.h"
+#include "../ofxDatGui.h"
+#include "../Controller/File/Settings.h"
+#include "../Model/Mask.h"
+#include "../Controller/File/MyFile.h"
+#include "../Controller/EditShape.h"
 
 class DatGui
 {

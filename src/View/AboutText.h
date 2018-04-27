@@ -1,5 +1,5 @@
 #pragma once
-#include "ofMain.h"
+#include "../ofMain.h"
 
 class AboutText {
 public:

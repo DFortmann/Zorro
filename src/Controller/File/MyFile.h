@@ -1,7 +1,7 @@
 #pragma once
 #include "ofxXmlSettings.h"
-#include "MaskElem.h"
-#include "DatGui.h"
+#include "../../Model/MaskElem.h"
+#include "../../View/DatGui.h"
 
 class MyFile {
 public:

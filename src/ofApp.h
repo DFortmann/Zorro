@@ -1,12 +1,12 @@
 #pragma once
 
 #include "ofMain.h"
-#include "Mask.h"
-#include "SelectShape.h"
-#include "EditShape.h"
-#include "MyFile.h"
-#include "AboutText.h"
-#include "DatGui.h"
+#include "Model/Mask.h"
+#include "Controller/SelectShape.h"
+#include "Controller/EditShape.h"
+#include "Controller/File/MyFile.h"
+#include "View/AboutText.h"
+#include "View/DatGui.h"
 
 
 class ofApp : public ofBaseApp{

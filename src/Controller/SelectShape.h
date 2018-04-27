@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Mask.h"
+#include "../Model/Mask.h"
 #include <vector>
 
 class SelectShape {

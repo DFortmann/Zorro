@@ -1,6 +1,6 @@
 #pragma once
-#include "ofMain.h"
-#include "MaskElem.h"
+#include "../ofMain.h"
+#include "../Model/MaskElem.h"
 
 class RenderHelper
 {

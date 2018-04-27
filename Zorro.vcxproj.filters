@@ -13,36 +13,6 @@
     <ClCompile Include="src\ofApp.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="src\EditShape.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Mask.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MaskElem.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MyPoint.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\SelectShape.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Settings.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\MyFile.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\AboutText.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\RenderHelper.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DatGui.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.cpp">
       <Filter>addons\ofxXmlSettings\src</Filter>
     </ClCompile>
@@ -63,6 +33,36 @@
     </ClCompile>
     <ClCompile Include="..\..\..\addons\ofxDatGui\src\libs\ofxSmartFont\ofxSmartFont.cpp">
       <Filter>addons\ofxDatGui\src\libs\ofxSmartFont</Filter>
+    </ClCompile>
+    <ClCompile Include="src\View\DatGui.cpp">
+      <Filter>src\View</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model\MyPoint.cpp">
+      <Filter>src\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\View\AboutText.cpp">
+      <Filter>src\View</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model\Mask.cpp">
+      <Filter>src\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Model\MaskElem.cpp">
+      <Filter>src\Model</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Controller\EditShape.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Controller\RenderHelper.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Controller\SelectShape.cpp">
+      <Filter>src\Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Controller\File\MyFile.cpp">
+      <Filter>src\Controller\File</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Controller\File\Settings.cpp">
+      <Filter>src\Controller\File</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -102,6 +102,18 @@
     <Filter Include="addons\ofxDatGui\src\themes">
       <UniqueIdentifier>{99309d7b-f322-487f-9c11-44ab27511a30}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Model">
+      <UniqueIdentifier>{80640513-ac89-4068-85cf-dd3492380815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\View">
+      <UniqueIdentifier>{e9c0ddcc-57db-4142-92a8-5ebd142cc35e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Controller">
+      <UniqueIdentifier>{47fb9edc-d5dc-48df-8a5d-8f4b6c70487a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Controller\File">
+      <UniqueIdentifier>{7bea472f-0226-474c-ad12-22c486795c14}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ofApp.h">
@@ -110,40 +122,7 @@
     <ClInclude Include="src\ofApp.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="src\EditShape.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Mask.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MaskElem.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MyPoint.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\SelectShape.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Settings.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\MyFile.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h" />
-    <ClInclude Include="src\AboutText.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\RenderHelper.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DatGui.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DatGuiTheme.h">
-      <Filter>src</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxXmlSettings\src\ofxXmlSettings.h">
       <Filter>addons\ofxXmlSettings\src</Filter>
     </ClInclude>
@@ -212,6 +191,39 @@
     </ClInclude>
     <ClInclude Include="..\..\..\addons\ofxDatGui\src\themes\ofxDatGuiThemes.h">
       <Filter>addons\ofxDatGui\src\themes</Filter>
+    </ClInclude>
+    <ClInclude Include="src\View\DatGui.h">
+      <Filter>src\View</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Model\MyPoint.h">
+      <Filter>src\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\View\AboutText.h">
+      <Filter>src\View</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Model\Mask.h">
+      <Filter>src\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Model\MaskElem.h">
+      <Filter>src\Model</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Controller\EditShape.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Controller\RenderHelper.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Controller\SelectShape.h">
+      <Filter>src\Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="src\View\DatGuiTheme.h">
+      <Filter>src\View</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Controller\File\MyFile.h">
+      <Filter>src\Controller\File</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Controller\File\Settings.h">
+      <Filter>src\Controller\File</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

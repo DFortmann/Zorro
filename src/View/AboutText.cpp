@@ -107,9 +107,9 @@ void AboutText::drawShortcuts() {
 	vector<string> bodyText;
 	bodyText.push_back("Arrow Keys - Move selected shape or selected point.");
 	bodyText.push_back(" ");
-	bodyText.push_back("Ctrl + Left/Right Arrow - Select previous/next point.");
+	bodyText.push_back("Ctrl + Arrow Keys - Select previous/next point.");
 	bodyText.push_back(" ");
-	bodyText.push_back("Ctrl + Up/Down Arrow - Scale shape up down.");
+	bodyText.push_back("Ctrl + Shift + Arrow Keys - Add next point to selection.");
 	bodyText.push_back(" ");
 	bodyText.push_back("Shift Key - Finer controls.");
 	bodyText.push_back(" ");

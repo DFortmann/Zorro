@@ -1,8 +1,8 @@
 #pragma once
 
-#include "ofMain.h"
+#include "../ofMain.h"
 #include "MyPoint.h"
-#include "RenderHelper.h"
+#include "../Controller/RenderHelper.h"
 #include <vector>
 
 class MaskElem 
